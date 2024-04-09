@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  web.wasm:
+    image: ${DOCKER_REGISTRY-}webwasm
+    build:
+      context: .
+      dockerfile: src/Web.Wasm/Dockerfile
